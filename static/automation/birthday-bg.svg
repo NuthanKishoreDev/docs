@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1530" height="982" viewBox="0 0 1530 982" fill="none">
+  <defs>
+    <radialGradient id="wash" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1110 150) rotate(125) scale(420 640)">
+      <stop offset="0" stop-color="#ffd5cc" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#f8f3de" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blur35" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="35"/>
+    </filter>
+    <radialGradient id="balloonRed" cx="30%" cy="30%" r="70%">
+      <stop offset="0" stop-color="#f9b8a5"/>
+      <stop offset="1" stop-color="#cf5c3f"/>
+    </radialGradient>
+    <radialGradient id="balloonBlue" cx="30%" cy="30%" r="70%">
+      <stop offset="0" stop-color="#c2dff2"/>
+      <stop offset="1" stop-color="#6ea4c8"/>
+    </radialGradient>
+    <radialGradient id="balloonGreen" cx="30%" cy="30%" r="70%">
+      <stop offset="0" stop-color="#d5ef86"/>
+      <stop offset="1" stop-color="#98ba23"/>
+    </radialGradient>
+    <radialGradient id="balloonYellow" cx="30%" cy="30%" r="70%">
+      <stop offset="0" stop-color="#ffe996"/>
+      <stop offset="1" stop-color="#d0b534"/>
+    </radialGradient>
+    <radialGradient id="balloonPurple" cx="30%" cy="30%" r="70%">
+      <stop offset="0" stop-color="#cfb6ec"/>
+      <stop offset="1" stop-color="#8a67bc"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1530" height="982" fill="#f8f3de"/>
+  <rect width="1530" height="982" fill="url(#wash)"/>
+
+  <g fill="#dad6c3" opacity="0.35">
+    <ellipse cx="10" cy="360" rx="56" ry="104"/>
+    <ellipse cx="250" cy="285" rx="40" ry="65"/>
+    <ellipse cx="500" cy="420" rx="55" ry="80"/>
+    <ellipse cx="735" cy="300" rx="44" ry="70"/>
+    <ellipse cx="1040" cy="410" rx="78" ry="110"/>
+    <ellipse cx="1230" cy="160" rx="44" ry="62"/>
+    <ellipse cx="850" cy="820" rx="78" ry="110"/>
+    <ellipse cx="1518" cy="700" rx="38" ry="62" fill="#f6d9bf"/>
+    <ellipse cx="390" cy="50" rx="34" ry="24" fill="#f4e3d3"/>
+  </g>
+
+  <g stroke="#a7afb5" stroke-width="2" stroke-linecap="round">
+    <line x1="92" y1="0" x2="92" y2="130"/>
+    <line x1="216" y1="0" x2="216" y2="66"/>
+    <line x1="710" y1="0" x2="710" y2="118"/>
+    <line x1="1026" y1="0" x2="1026" y2="84"/>
+    <line x1="1320" y1="0" x2="1320" y2="58"/>
+    <line x1="1414" y1="0" x2="1414" y2="230"/>
+    <line x1="1528" y1="0" x2="1528" y2="108"/>
+  </g>
+
+  <g>
+    <circle cx="92" cy="162" r="26" fill="url(#balloonRed)"/>
+    <circle cx="216" cy="42" r="24" fill="url(#balloonBlue)"/>
+    <circle cx="710" cy="138" r="30" fill="url(#balloonGreen)"/>
+    <circle cx="1026" cy="98" r="26" fill="url(#balloonBlue)"/>
+    <circle cx="1320" cy="36" r="26" fill="url(#balloonRed)"/>
+    <circle cx="1414" cy="258" r="26" fill="url(#balloonYellow)"/>
+    <circle cx="1528" cy="132" r="27" fill="url(#balloonPurple)"/>
+  </g>
+
+  <g fill="#c8d2d8">
+    <rect x="84" y="126" width="16" height="10" rx="4"/>
+    <rect x="208" y="59" width="16" height="10" rx="4"/>
+    <rect x="702" y="106" width="16" height="10" rx="4"/>
+    <rect x="1018" y="74" width="16" height="10" rx="4"/>
+    <rect x="1312" y="11" width="16" height="10" rx="4"/>
+    <rect x="1406" y="226" width="16" height="10" rx="4"/>
+    <rect x="1520" y="98" width="16" height="10" rx="4"/>
+  </g>
+
+  <circle cx="1118" cy="190" r="95" fill="#ffd5cc" opacity="0.35" filter="url(#blur35)"/>
+</svg>
