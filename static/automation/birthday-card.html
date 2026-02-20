@@ -105,7 +105,7 @@
 
     const defaults = {
       title: "Happy Birthday",
-      date: "20<sup>th</sup> February",
+      date: "20th February",
       name: "Teena Sabbarwal",
       tagline: "Have a wonderful day & year ahead!",
       photo: "https://via.placeholder.com/230x307.png?text=Photo"
@@ -113,8 +113,21 @@
 
     const getValue = (key) => params.get(key) || defaults[key];
 
+    const renderDate = (value) => {
+      const match = value
+        .trim()
+        .match(/^(\d{1,2})(?:\s*)(st|nd|rd|th)?\s+([A-Za-z]+(?:\s+[A-Za-z]+)*)$/i);
+
+      if (!match) {
+        return defaults.date;
+      }
+
+      const [, day, suffix = "th", month] = match;
+      return `${Number(day)}<sup>${suffix.toLowerCase()}</sup> ${month.trim()}`;
+    };
+
     document.getElementById("title").textContent = getValue("title");
-    document.getElementById("date").innerHTML = getValue("date");
+    document.getElementById("date").innerHTML = renderDate(getValue("date"));
     document.getElementById("name").textContent = getValue("name");
     document.getElementById("tagline").textContent = getValue("tagline");
 
